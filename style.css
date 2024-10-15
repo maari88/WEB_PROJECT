@@ -128,25 +128,62 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: center;
        }
-    @media screen and (min-width: 1201px){
-        
+      
+@media screen and (min-width: 1201px) {
+
+    .centered-box {
+        max-width: 1400px; 
+        padding: 30px; 
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1200px){
-        body {
-            font-size: 16px;
-            background-size: contain; /* Інший фон для планшетів */
-        }
-    
-        .centered-box {
-            width: 90%; /* Менша ширина */
-        }
-    
-        #header {
-            flex-direction: row;
-        }
-
+    .styled-table {
+        width: 70%; 
+        font-size: 1.2rem; 
     }
+
+    h1, h2, h3 {
+        font-size: 50px; 
+    }
+
+    p, ul, ol, li {
+        font-size: 1.5rem; 
+    }
+    
+    #footer {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+        background-size: contain; 
+    }
+
+    .centered-box {
+        width: 90%; 
+        padding: 20px; 
+    }
+
+    .styled-table {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 45px; 
+    }
+
+    p, ul, ol, li {
+        font-size: 1.2rem; 
+    }
+
+    #footer {
+        font-size: 18px;
+    }
+}
+    
 
     @media screen and (max-width: 767px) {
     body {
@@ -184,7 +221,7 @@
 
     
 
-  /* Адаптація лише для екранів, які не є Retina (використовуємо логічний оператор `not`) */
+  /* Адаптація лише для екранів, які не є Retina  */
 @media not all and (min-resolution: 192dpi) {
     body {
         background-color: rgba(0, 0, 0, 0.1);
