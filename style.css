@@ -69,6 +69,41 @@
           list-style-position: inside;
         }
         
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px auto;
+            font-family: 'Lexend Peta', sans-serif;
+            font-size: 1rem;
+            font-weight: 1000;
+            color: rgb(26, 29, 3);
+            background-color: rgb(211, 218, 144);
+            border: 2px solid rgb(87, 98, 17);
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: rgb(87, 98, 17);
+            color: white;
+            border-color: rgb(26, 29, 3);
+        }
+        
+        button:active {
+            background-color: rgb(66, 75, 13);
+            color: rgb(211, 218, 144);
+            border-color: rgb(26, 29, 3);
+        }
+        
+        button:disabled {
+            background-color: rgb(200, 200, 200);
+            color: rgb(150, 150, 150);
+            cursor: not-allowed;
+            border-color: rgb(170, 170, 170);
+        }
+        
         
         .styled-table {
             width: 80%;
@@ -81,6 +116,8 @@
             border: 2px solid rgb(87, 98, 17);
             padding: 10px;
         }
+
+
         #footer {
         background-color: whitesmoke;
         font-size: 18px;
@@ -217,6 +254,30 @@
      
     }
 
+    }
+
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
     }
 
     
