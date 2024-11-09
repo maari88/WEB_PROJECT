@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="form_script.js" defer></script>
+    <title>Форма запису</title>
+</head>
+<body style="background-image: url(https://img.freepik.com/premium-vector/brown-pastel-colours-abstract-background-mountain-shapes-background-light-colors-colored-pattern_655111-888.jpg);
+background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+">
+    <header id = "header">
+
+    </header>
+    <main>
+        <h1> Заточна майстерня DOMOS</h1>
+        <p>Записатись на прийом</p>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label>Ім'я<span class = "required">*</span>
+                <input type="text" id="name" required>
+            </label>
+            <label>Вік<span class="required">*</span>
+                <input type="number" id="age" required>
+            </label>
+            <label>Вага<span class="required">*</span>
+                <input type="text" id="weight" required>
+            </label>
+            <label>Дата народження (DD.MM.YYYY) <span class="required">*</span>
+                <input type="text" id="birthDate" required>
+            </label>
+            <label>Пароль <span class="required">*</span>
+                <input type="password" id="password" required>
+            </label>
+            <label>Повторіть пароль <span class="required">*</span>
+                <input type="password" id="confirmPassword" required>
+            </label>
+            <button type="submit">Записатись</button>
+            <div id="errorMessage"class="error"></div>
+        </form>
+    </main>
+
+</body>
+</html>
